@@ -1,0 +1,9 @@
+{% for contact in contacts %}
+    <div class="contact-entry">
+        <h3>{{ contact.name }}</h3>
+        <p><strong>Email:</strong> {{ contact.email }}</p>
+        <p><strong>Subject:</strong> {{ contact.subject }}</p>
+        <p><strong>Message:</strong> {{ contact.message }}</p>
+        <p><strong>Submitted on:</strong> {{ contact.created_at }}</p>
+    </div>
+{% endfor %}
